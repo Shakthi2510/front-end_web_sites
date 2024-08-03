@@ -263,7 +263,7 @@
 
 @media screen and (max-width:600px) {
     .nav0{
-        width: 132.6%;
+        padding-left: 132.6%;
     }
     .all{
         background-image: url(img/OIP\ \(3\).jpg);
