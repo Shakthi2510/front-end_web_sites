@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="css/img/login.jpg">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #email, #password {
+            border-radius: 20px;
+        }
+        #el, #passs {
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        .nav1 .w, #login {
+            display: inline;
+            padding: 20px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+        .w:hover, #login:hover {
+            color: blueviolet;
+        }
+        #login {
+            text-decoration: none;
+        }
+        .nav1 {
+            box-shadow: rgba(0, 0, 0, 1.24) 0px 3px 8px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        input {
+            color: black;
+            background-color: white;
+            padding: 5px;
+            box-shadow: 20px 20px 20px black;
+        }
+        input:hover {
+            box-shadow: 10px;
+            transition: 2s;
+        }
+        #button1 {
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        #submit, #reset {
+            margin: 10px;
+            background-color: white;
+            color: black;
+            padding: 3px;
+            cursor: pointer;
+        }
+        #a {
+            text-decoration: none;
+        }
+        button{
+            border-radius: 30px;
+        }
+        .p0{
+            padding: 15px;
+            font-size: xx-large;
+            cursor: pointer;
+            display: inline;
+        }
+        .p0:hover{
+            color: blueviolet;
+        }
+        .w1{
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .w1:hover{
+            color:blueviolet;
+        }
+        .hide{
+            display: none;
+            width: 30%;
+        }
+        body{
+            color: white;
+            background-image: url(css/img/indiagateway.jpg);
+            height: 785px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #total{
+            padding-top: 7%;
+        }
+        
+        @media  screen and (max-width:600px){
+            .nav1{
+                display: none;
+            }
+        }
+        @media screen and (min-width:600px) {
+            .p0{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <nav class="nav">
+            <p class="p0">=</p>
+            <nav class="nav1">
+                <a href="#" class="w">Home</a>
+                <a href="About Us.html" class="w">About Us</a>
+                <a href="terms and conditions.html" class="w">Terms & Conditions</a>
+                <a href="signup.html" class="w">Signup</a>
+        </nav>
+        <nav class="hide">
+            <a href="#" class="w1">Home</a>
+            <a href="About Us.html" class="w1">About Us</a>
+            <a href="teams and conditions.html" class="w1">Terms and Conditions</a>
+            <a href="signup.html" class="w1">Signup</a>
+        </nav>
+        <div id="total">
+            <div id="el">
+                <label for="email" style="font-size: xx-large;">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div id="passs">
+                <label for="password"  style="font-size: xx-large;">Password:</label>
+                <input type="password" id="password" placeholder="Enter Your Password">
+            </div>
+        </div>
+        <div id="button1">
+            <button type="button" id="submit" ><a id="a" href="main.html">Login</a></button>
+            <button id="reset" type="reset">Reset</button>
+        </div>
+    </div>
+</body>
+<script>
+    var hide=document.getElementsByClassName("hide")[0];
+    function se(){
+        hide.style.display="block";
+    }
+</script>
+</html>
